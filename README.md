@@ -46,4 +46,5 @@ https://college-event-management-i5nu.onrender.com/
 
 ## Author
 **Vismaya Rajesh A M**
+
 B.Tech Computer Science and Engineering
