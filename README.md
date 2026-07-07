@@ -46,7 +46,7 @@ https://college-event-management-i5nu.onrender.com/
 
 ##screenshorts
 
-##Home page
+Home page
 <img width="1902" height="917" alt="Screenshot 2026-07-07 212232" src="https://github.com/user-attachments/assets/512d42e6-b36d-4ea6-ba0b-25149dd7ab19" />
 <img width="1878" height="892" alt="Screenshot 2026-07-07 212249" src="https://github.com/user-attachments/assets/90174675-1c3e-4d76-a3f3-099017f2a0eb" />
 
