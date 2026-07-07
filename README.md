@@ -44,7 +44,7 @@ python app.py
 ## Live Demo
 https://college-event-management-i5nu.onrender.com/
 
-screenshorts
+###screenshorts
 
 Home page
 <img width="1902" height="917" alt="Screenshot 2026-07-07 212232" src="https://github.com/user-attachments/assets/512d42e6-b36d-4ea6-ba0b-25149dd7ab19" />
