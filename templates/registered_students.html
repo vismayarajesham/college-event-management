@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registered Students</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Registered Students</h1>
+
+<div class="search-container">
+
+    <form method="GET" class="search-form">
+
+        <input
+            type="text"
+            name="search"
+            placeholder="Search Student or Event"
+            value="{{ search }}">
+
+        <button type="submit">
+            Search
+        </button>
+
+    </form>
+
+</div>
+
+<br>
+
+<table border="1" cellpadding="10">
+
+<tr>
+
+    <th>ID</th>
+    <th>Student Name</th>
+    <th>Event Name</th>
+    <th>Certificate</th>
+    <th>Delete</th>
+
+</tr>
+
+{% for reg in registrations %}
+
+<tr>
+
+    <td>{{ reg[0] }}</td>
+    <td>{{ reg[1] }}</td>
+    <td>{{ reg[2] }}</td>
+
+    <td>
+
+        <a href="/generate_certificate/{{ reg[0] }}">
+            <button>Generate Certificate</button>
+        </a>
+
+    </td>
+
+    <td>
+
+        <a href="/delete_registration/{{ reg[0] }}">
+            <button>Delete</button>
+        </a>
+
+    </td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br><br>
+
+<a href="/admin_dashboard">
+    <button>Back</button>
+</a>
+
+</body>
+</html>

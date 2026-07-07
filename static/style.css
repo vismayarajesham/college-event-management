@@ -1,0 +1,520 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#050512;
+    color:white;
+}
+
+/* Hero Section */
+
+.hero{
+    height:500px;
+
+    background:
+    linear-gradient(
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.65)
+    ),
+    url("images/party.png");
+
+    background-size:cover;
+    background-position:center;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+}
+
+.hero h1{
+    font-size:70px;
+    font-weight:bold;
+    margin-bottom:20px;
+    text-shadow:0 0 20px rgba(95,59,255,0.8);
+}
+.hero p{
+    font-size:20px;
+    margin-bottom:30px;
+    color:#ddd;
+}
+
+/* Headings */
+
+h1{
+    text-align:center;
+    margin:30px;
+    font-size:48px;
+}
+
+h1::after{
+    content:"";
+    display:block;
+    width:120px;
+    height:4px;
+    background:#5f3bff;
+    margin:10px auto;
+    border-radius:5px;
+}
+
+h2{
+    text-align:center;
+    margin:20px;
+}
+
+/* Login & Signup Card */
+.login-section{
+    width:450px;
+    margin:50px auto;
+    background:rgba(18,18,37,0.95);
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 0 30px rgba(0,0,0,0.6);
+    text-align:center;
+    backdrop-filter:blur(10px);
+}
+
+/* Inputs */
+
+input{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    background:#1e1e35;
+    color:white;
+    font-size:15px;
+}
+
+input::placeholder{
+    color:#aaa;
+}
+
+/* Buttons */
+
+button{
+    border:none;
+    padding:12px 25px;
+    border-radius:25px;
+    cursor:pointer;
+    color:white;
+    font-size:15px;
+
+    background:linear-gradient(
+        90deg,
+        #020202,
+        #111112
+    );
+
+    box-shadow:0 0 15px rgba(9, 9, 9, 0.5);
+
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.08);
+    box-shadow:0 0 25px rgba(74,42,214,0.9);
+}
+body{
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:1;
+    }
+}
+table{
+    transition:0.3s;
+}
+
+table:hover{
+    transform:translateY(-3px);
+}
+
+
+
+/* Links */
+
+a{
+    text-decoration:none;
+    color:#8d6cff;
+}
+
+/* Tables */
+
+table{
+    width:90%;
+    margin:30px auto;
+    border-collapse:collapse;
+    background:#121225;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 0 20px rgba(0,0,0,0.5);
+}
+
+th{
+    background:linear-gradient(
+        90deg,
+        #2b1b80,
+        #4422b8
+    );
+
+    color:white;
+    padding:18px;
+    font-size:18px;
+}
+
+td{
+    padding:18px;
+    text-align:center;
+    border-bottom:1px solid #2d2d40;
+}
+
+tr:hover{
+    background:#1b1b35;
+}
+
+/* Dashboard Buttons */
+
+/* Student Dashboard Menu */
+
+.dashboard-btn{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin:30px 0;
+}
+
+.dashboard-btn a{
+    text-decoration:none;
+}
+
+.dashboard-btn button{
+    min-width:170px;
+}
+
+/* Footer */
+
+footer{
+    background:#000;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+/* Paragraphs */
+
+p{
+    color:#ddd;
+    margin-top:10px;
+}
+
+/* Container */
+
+.container{
+    width:90%;
+    margin:auto;
+}
+/* Admin Dashboard Cards */
+
+.dashboard-cards{
+    display:flex;
+    justify-content:center;
+    gap:25px;
+    flex-wrap:wrap;
+    margin:40px 0;
+}
+
+.card{
+    width:220px;
+    padding:30px;
+    background:#121225;
+    border-radius:15px;
+    text-align:center;
+    box-shadow:0 0 20px rgba(0,0,0,.4);
+}
+
+.card h2{
+    color:#8d6cff;
+    font-size:40px;
+    margin-bottom:10px;
+}
+
+.card p{
+    color:white;
+    font-size:18px;
+}
+
+.admin-navbar{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:25px;
+    margin:25px 0;
+    flex-wrap:wrap;
+}
+
+.admin-navbar a{
+    text-decoration:none;
+    color:white;
+    font-size:17px;
+    font-weight:bold;
+    padding:10px 20px;
+    border-radius:30px;
+    
+    transition:0.3s;
+}
+
+.admin-navbar a:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 15px rgba(96,165,250,.5);
+}
+.main-title{
+    text-align:center;
+    color:white;
+    font-size:52px;
+    margin-top:30px;
+}
+
+.welcome{
+    text-align:center;
+    color:#d8d8d8;
+    margin-bottom:25px;
+}
+
+.banner{
+
+    background:none;
+
+    box-shadow:none;
+
+    border-radius:0;
+
+    padding:40px 0;
+
+    text-align:center;
+
+}
+
+.banner h1{
+    margin:0;
+    font-size:52px;
+}
+
+.banner p{
+    font-size:22px;
+    color:#eee;
+    margin-top:15px;
+}
+.search-box{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.search-box input{
+    width:65%;
+    padding:14px;
+    border-radius:30px;
+    border:none;
+    background:#1e1e35;
+    color:white;
+    font-size:18px;
+}
+/* Student Event Cards */
+
+.card{
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 30px rgba(7, 7, 7, 0.5);
+}
+
+.card button{
+    margin-top:15px;
+    width:100%;
+}
+
+#contact{
+    margin-top:60px;
+    text-align:center;
+    background:#121225;
+    padding:40px;
+    border-radius:20px;
+}
+
+#contact p{
+    font-size:18px;
+    margin:10px 0;
+}
+/* Remove underline from selected headings */
+.no-line::after{
+    display:none !important;
+}
+.main-title{
+    margin:10px 0 !important;
+}
+
+.banner h1{
+    margin:10px 0 !important;
+}
+
+.banner h2{
+    margin:8px 0 !important;
+}
+
+.banner p{
+    margin:8px 0 !important;
+}
+
+.banner h3{
+    margin:8px 0 !important;
+}
+/* Login & Forgot Password */
+
+.login-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:20px;
+
+    margin-top:10px;
+
+}
+
+.link-btn{
+
+    background:none !important;
+
+    border:none;
+
+    box-shadow:none !important;
+
+    color:#8d6cff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+    padding:0;
+
+    transition:0.3s;
+
+}
+
+.link-btn:hover{
+
+    background:none !important;
+
+    box-shadow:none !important;
+
+    transform:none !important;
+
+    color:white;
+
+}
+
+.login-actions a{
+
+    color:#8d6cff;
+
+    font-size:16px;
+
+    font-weight:bold;
+
+    text-decoration:none;
+
+    transition:0.3s;
+
+}
+
+.login-actions a:hover{
+
+    color:white;
+
+}
+/* Registered Students Search */
+
+.search-container{
+
+    width:90%;
+
+    margin:25px auto;
+
+}
+
+.search-form{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+}
+
+.search-form input{
+
+    flex:1;
+
+    padding:14px;
+
+    font-size:17px;
+
+    border-radius:10px;
+
+}
+
+.search-form button{
+
+    white-space:nowrap;
+
+    padding:14px 28px;
+
+}
+.login-section{
+    position: relative;
+}
+
+.back-arrow{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.back-arrow:hover{
+    color: #87CEFA;
+}
+.home{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}

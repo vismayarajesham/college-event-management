@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Available Events</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>Available Events</h1>
+
+    {% for event in events %}
+
+    <div class="card" style="width:500px; margin:25px auto;">
+
+        <h2>{{ event[1] }}</h2>
+
+        <hr>
+
+        <p><b>🎯 Event Type :</b> {{ event[2] }}</p>
+
+        <p><b>🕒 Time :</b> {{ event[3] }}</p>
+
+        <p><b>👥 Minimum Members :</b> {{ event[4] }}</p>
+
+        <p><b>👥 Maximum Members :</b> {{ event[5] }}</p>
+
+    </div>
+
+    {% endfor %}
+
+    <div class="dashboard-btn">
+
+        <a href="/dashboard">
+            <button>Back</button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

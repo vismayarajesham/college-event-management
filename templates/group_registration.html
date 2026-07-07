@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Registration</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Group Event Registration</h1>
+
+<h3>Event: Hackathon</h3>
+
+<p>
+Minimum Participants: 2<br>
+Maximum Participants: 4
+</p>
+
+<form action="/group_success">
+
+<label>Team Name</label><br>
+<input type="text" name="team_name" required>
+<br><br>
+
+<label>Team Leader</label><br>
+<input type="text" name="leader" required>
+<br><br>
+
+<label>Total Participants</label><br>
+<input type="number"
+       name="participants"
+       min="2"
+       max="4"
+       required>
+<br><br>
+
+<label>Member 1</label><br>
+<input type="text" name="member1">
+<br><br>
+
+<label>Member 2</label><br>
+<input type="text" name="member2">
+<br><br>
+
+<label>Member 3</label><br>
+<input type="text" name="member3">
+<br><br>
+
+<button type="submit">
+Register Team
+</button>
+
+</form>
+
+</body>
+</html>

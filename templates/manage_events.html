@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Manage Events</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Manage Events</h1>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Event Name</th>
+    <th>Type</th>
+    <th>Time</th>
+    <th>Delete</th>
+</tr>
+
+{% for event in events %}
+
+<tr>
+    <td>{{ event[1] }}</td>
+    <td>{{ event[2] }}</td>
+    <td>{{ event[3] }}</td>
+
+    <td>
+        <a href="/edit_event/{{ event[0] }}">
+            <button>Edit</button>
+        </a>
+        <a href="/delete_event/{{ event[0] }}">
+            <button>Delete</button>
+        </a>
+    </td>
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/add_event">
+    <button>Add Event</button>
+</a>
+<a href="/admin_dashboard" class="home">&#x2302;</a>
+</body>
+</html>

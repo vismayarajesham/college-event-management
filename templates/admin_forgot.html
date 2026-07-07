@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Forgot Password</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-section">
+
+    <h1>Admin Forgot Password</h1>
+
+    <form method="POST">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter Admin Email"
+            required>
+
+        <br><br>
+
+        <button type="submit">
+            Send OTP
+        </button>
+
+    </form>
+
+</div>
+<a href="/" class="back-arrow">&#x2302;</a>
+</body>
+</html>

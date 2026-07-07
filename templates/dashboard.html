@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Student Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2 class="welcome">
+        Welcome, {{ name }} 
+    </h2>
+
+    <div class="dashboard-btn">
+
+        <a href="/dashboard">
+            <button>Home</button>
+        </a>
+
+        <a href="/my_registrations">
+            <button>My Registrations</button>
+        </a>
+
+        <a href="/my_certificates">
+            <button>My Certificates</button>
+        </a>
+
+        <a href="#contact">
+            <button>Contact</button>
+        </a>
+
+        <a href="/logout">
+            <button>Logout</button>
+        </a>
+
+    </div>
+
+    <br>
+
+    <div class="search-box">
+
+        <input
+            type="text"
+            id="searchInput"
+            placeholder="Search Events...">
+
+    </div>
+
+    <br>
+
+    <h2>Available Events</h2>
+
+    <div class="dashboard-cards">
+
+        {% for event in events %}
+
+        <div class="card">
+
+            <h2>{{ event[1] }}</h2>
+
+            <p><b>Type:</b> {{ event[2] }}</p>
+
+            <p><b>Time:</b> {{ event[3] }}</p>
+
+            <p><b>Members:</b> {{ event[4] }} - {{ event[5] }}</p>
+
+            <br>
+
+            <a href="/register_event/{{ event[1] }}">
+                <button>Register</button>
+            </a>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+    <br><br>
+
+    <div id="contact">
+
+        <h2>Contact Us</h2>
+
+        <p>📧 collegeevents@gmail.com</p>
+
+        <p>📞 +91 9876543210</p>
+
+        <p>📍 College Campus</p>
+
+    </div>
+
+</div>
+
+</body>
+</html>

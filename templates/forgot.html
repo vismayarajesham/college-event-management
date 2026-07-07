@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Forgot Password</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="login-section">
+
+    <h1>Forgot Password</h1>
+
+    <p>Enter your registered email address.</p>
+
+    <br>
+
+    <form action="/forgot" method="POST">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Enter Registered Email"
+            required>
+
+        <br><br>
+
+        <button type="submit">
+            Send OTP
+        </button>
+
+    </form>
+
+</div>
+<a href="/" class="back-arrow">&#x2302;</a>
+</body>
+</html>

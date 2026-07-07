@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Admin Profile</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-section">
+
+    <h1>Admin Profile</h1>
+
+    <p><b>Admin ID</b></p>
+    <p>{{ session['admin'] }}</p>
+
+    <br>
+
+    <p><b>Email</b></p>
+    <p>{{ session['admin_email'] }}</p>
+
+    <br><br>
+
+    <a href="/admin_dashboard">
+        <button>Back to Dashboard</button>
+    </a>
+
+    <br><br>
+
+    <a href="/change_admin_password">
+        <button>Change Password</button>
+    </a>
+
+    <br><br>
+
+    <a href="/admin_logout">
+        <button>Logout</button>
+    </a>
+
+</div>
+
+</body>
+</html>

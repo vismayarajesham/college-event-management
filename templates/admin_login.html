@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Admin Login</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="login-section">
+
+    <h1 class="no-line">Admin Login</h1>
+
+    <form method="POST">
+
+        <input
+            type="email"
+            name="email"
+            placeholder="Admin Email"
+            required>
+
+        <br><br>
+
+        <input
+            type="password"
+            name="password"
+            placeholder="Password"
+            required>
+
+        <br><br>
+
+        <div class="login-actions">
+
+            <button type="submit" class="link-btn">
+                Login
+            </button>
+
+            <a href="/admin_forgot">
+                Forgot Password?
+            </a>
+
+        </div>
+
+    </form>
+
+    <br><br>
+
+    <a href="/">
+        <button type="button">
+            Back to Home
+        </button>
+    </a>
+
+</div>
+
+</body>
+
+</html>

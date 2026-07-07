@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Event</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>Add Event</h1>
+
+<form method="POST">
+
+    Event Name:<br>
+    <input type="text" name="event_name" required>
+    <br><br>
+
+    Event Type:<br>
+    <select name="event_type">
+        <option>Individual</option>
+        <option>Group</option>
+    </select>
+    <br><br>
+
+    Event Time:<br>
+    <input type="text" name="event_time" required>
+    <br><br>
+
+    Minimum Members:<br>
+    <input type="number" name="min_members">
+    <br><br>
+
+    Maximum Members:<br>
+    <input type="number" name="max_members">
+    <br><br>
+
+    <button type="submit">Add Event</button>
+
+</form>
+<a href="/admin_dashboard" class="home">&#x2302;</a>
+</body>
+</html>

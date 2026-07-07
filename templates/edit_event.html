@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Event</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<div class="login-section">
+
+    <h1>Edit Event</h1>
+
+    <form method="POST">
+
+        <input
+            type="text"
+            name="event_name"
+            value="{{ event[1] }}"
+            placeholder="Event Name"
+            required>
+
+        <br><br>
+
+        <input
+            type="text"
+            name="event_type"
+            value="{{ event[2] }}"
+            placeholder="Event Type"
+            required>
+
+        <br><br>
+
+        <input
+            type="text"
+            name="event_time"
+            value="{{ event[3] }}"
+            placeholder="Event Time"
+            required>
+
+        <br><br>
+
+        <input
+            type="number"
+            name="min_members"
+            value="{{ event[4] }}"
+            placeholder="Minimum Members"
+            required>
+
+        <br><br>
+
+        <input
+            type="number"
+            name="max_members"
+            value="{{ event[5] }}"
+            placeholder="Maximum Members"
+            required>
+
+        <br><br>
+
+        <button type="submit">
+            Update Event
+        </button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

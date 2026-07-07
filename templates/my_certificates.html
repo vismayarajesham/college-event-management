@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>My Certificates</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>My Certificates</h1>
+
+<table border="1" cellpadding="10">
+
+<tr>
+
+    <th>Event</th>
+    <th>Certificate</th>
+
+</tr>
+
+{% for cert in certificates %}
+
+<tr>
+
+    <td>{{ cert[0] }}</td>
+
+    <td>
+
+        <a href="/download_certificate/{{ cert[1] }}">
+            <button>Download</button>
+        </a>
+
+    </td>
+
+</tr>
+
+{% endfor %}
+
+</table>
+
+<br>
+
+<a href="/dashboard">
+
+<button>Back</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

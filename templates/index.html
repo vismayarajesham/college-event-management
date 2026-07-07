@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Management System</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+    <div class="hero">
+
+        <h1>College Event Management System</h1>
+
+        <p>
+            Discover, Register and Participate in Exciting Events
+        </p>
+
+        <a href="/events">
+            <button>VIEW EVENTS</button>
+        </a>
+
+    </div>
+
+    <div class="login-section">
+
+        <h2>Let's Get Started!</h2>
+
+        <form action="/login" method="POST">
+
+            <input type="text"
+                   name="student_name"
+                   placeholder="First Name">
+
+            <br><br>
+
+            <input type="text"
+                   placeholder="Last Name">
+
+            <br><br>
+
+            <input type="email"
+                   name="email"
+                   placeholder="Email"
+                   required>
+
+            <br><br>
+
+            <input type="password"
+                   name="password"
+                   placeholder="Password"
+                   required>
+
+            <br><br>
+
+            <button type="submit">
+                Login
+            </button>
+
+            <a href="/forgot">
+                <button type="button">
+                    Forgot Password?
+                </button>
+            </a>
+
+            <br><br>
+
+            <p>
+                New user?
+                <a href="/signup">Sign Up</a>
+            </p>
+
+            <br>
+
+            <p>
+                Admin?
+                <a href="/admin_login">Admin Login</a>
+            </p>
+
+        </form>
+
+    </div>
+
+    <footer>
+
+        <p>
+            © 2026 College Event Management System
+        </p>
+
+    </footer>
+
+</body>
+</html>

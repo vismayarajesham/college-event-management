@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Certificate Generated</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1 class="no-line">
+        Certificate Generated Successfully
+    </h1>
+
+    <div class="banner">
+
+        <h2>Certificate Created </h2>
+
+        <p>
+            The participation certificate has been generated successfully.
+        </p>
+
+        <br>
+
+        
+
+        <p>
+            Event : <b>{{ event_name }}</b>
+        </p>
+
+    </div>
+
+    <div class="dashboard-btn">
+
+        <a href="/registered_students">
+            <button>Back to Registered Students</button>
+        </a>
+
+        <a href="/admin_dashboard">
+            <button>Home</button>
+        </a>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>

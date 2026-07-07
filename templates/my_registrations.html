@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Registrations</title>
+    <link rel="stylesheet"
+      href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<h1>My Registrations</h1>
+
+<table border="1" cellpadding="10">
+
+<tr>
+    <th>Registered Event</th>
+</tr>
+
+{% for reg in registrations %}
+
+<tr>
+    <td>{{ reg[2] }}</td>
+</tr>
+
+{% endfor %}
+
+</table>
+<br><br>
+
+<div style="text-align:center;">
+    <a href="/dashboard">
+        <button type="button">← HOME</button>
+    </a>
+</div>
+</body>
+</html>
