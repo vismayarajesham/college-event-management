@@ -42,7 +42,7 @@ python app.py
 ```
 
 ## Live Demo
-https://your-render-link.onrender.com
+https://college-event-management-i5nu.onrender.com/
 
 ## Author
 **Vismaya Rajesh A M**
